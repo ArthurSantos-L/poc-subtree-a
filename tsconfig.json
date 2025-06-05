@@ -1,12 +1,16 @@
-{
-     "compilerOptions": {
-       "target": "es2016",
-       "module": "commonjs",
-       "outDir": "./dist",
-       "esModuleInterop": true,
-       "forceConsistentCasingInFileNames": true,
-       "strict": true,
-       "skipLibCheck": true
-     },
-     "include": ["src/**/*"]
-   }
+  {
+    "compilerOptions": {
+      "target": "es2016",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+        "@greeter/*": ["libs/greeter/src/*"]
+      }
+    },
+   "include": ["src/**/*", "libs/greeter/src/**/*"]
+  }
